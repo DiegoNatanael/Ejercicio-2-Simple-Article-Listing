@@ -20,8 +20,8 @@ Deberás desarrollar una página web con HTML y CSS que muestre un listado de ar
 ---
 
 ## 🔗 Enlace al proyecto
-Repositorio en GitHub: [Pega aquí tu enlace]  
-Deploy: [LINK]
+Repositorio en GitHub: https://github.com/DiegoNatanael/Ejercicio-2-Simple-Article-Listing
+Deploy: https://diegonatanael.github.io/Ejercicio-2-Simple-Article-Listing/
 ---
 
 ## 📝 Reflexión
