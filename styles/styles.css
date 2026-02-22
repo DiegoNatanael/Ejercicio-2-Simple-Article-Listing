@@ -1,0 +1,142 @@
+:root {
+  --primary-bg: #ffffff;
+  --dark-bg: #000101;
+  --text-heading: #121826;
+  --text-body: #6c727f;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* Articles Section */
+.articles-section {
+  padding: 80px 20px;
+  background-color: var(--primary-bg);
+}
+
+.articles-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.articles-main-title {
+  color: var(--text-heading);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+}
+
+.separator-container {
+  margin-bottom: 60px;
+}
+
+.separator {
+  max-width: 100%;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.article-item {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.article-item:hover {
+  transform: translateX(10px);
+}
+
+.article-image-box {
+  flex-shrink: 0;
+}
+
+.article-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.article-content {
+  flex-grow: 1;
+}
+
+.article-title {
+  color: var(--text-heading);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.article-date {
+  font-size: 14px;
+  color: var(--text-body);
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: var(--dark-bg);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.author-info {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.author-info a {
+  color: #56c3e6;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .articles-main-title {
+    font-size: 36px;
+  }
+
+  .article-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}
